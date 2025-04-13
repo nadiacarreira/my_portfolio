@@ -1,1 +1,11 @@
-<p>home works!</p>
+<section id="home">
+    <h1>{{ 'hello' | translate }}</h1>
+    <p>{{ 'subtitle' | translate }}</p>
+
+    <select (change)="changeLang($event)">
+      <option value="es">Español</option>
+      <option value="en">English</option>
+      <option value="eu">Euskera</option>
+    </select>
+    
+  </section>
